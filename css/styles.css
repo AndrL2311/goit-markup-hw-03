@@ -13,6 +13,14 @@
   --botton-accent-color: #188ce8;
 }
 /* Конец Переменные */
+/* Глобальный  border-box*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Конец лобальный  border-box*/
+
 /* Базовый сброс */
 .link {
   text-decoration: none;
@@ -143,6 +151,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -203,14 +216,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  padding: 6px 22px;
+  border: 1px solid transparent;
 }
 
 .botton-nav-portfolio:hover,
 .botton-nav-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--color1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /*Конец main portfolio.html*/
