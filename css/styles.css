@@ -1,0 +1,216 @@
+/* Переменные */
+:root {
+  --main-fond: Roboto, sans-serif;
+  --secondari-font: Raleway, sans-serif;
+  --accent-color: #2196f3;
+  --background-color: #e5e5e5;
+  --text-color: #757575;
+  --title-color: #212121;
+  --color1: #ffffff;
+  --color2: #000000;
+  --adress-color: rgba(255, 255, 255, 0.6);
+  --botton-background-color: #f5f4fa;
+  --botton-accent-color: #188ce8;
+}
+/* Конец Переменные */
+/* Базовый сброс */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.address {
+  font-style: normal;
+}
+/* Конец базовый сброс */
+
+body {
+  font-family: var(--main-fond);
+  background-color: var(--background-color);
+}
+
+/* header */
+/* Логотип */
+.logo {
+  font-family: var(--secondari-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.logo-studio-header {
+  color: var(--color2);
+}
+.logo-studio-footer {
+  color: var(--color1);
+}
+
+/* Навигация */
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.navigation-list .link.current {
+  color: var(--accent-color);
+}
+
+/* Телефон и mail */
+.kontakt-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.navigation-link:hover,
+.navigation-link:focus,
+.kontakt-link:hover,
+.kontakt-link:focus {
+  color: var(--accent-color);
+}
+/* Конец header */
+
+/* main index.html*/
+.title-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color1);
+}
+
+.title-feature {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.text-feature {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.title-employment,
+.title-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.title-workman {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.text-workman {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* Кнопка */
+.button {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--color1);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--botton-accent-color);
+}
+/*Конец main index.html*/
+
+/* footer */
+.address-footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--adress-color);
+}
+
+.address-00-footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color1);
+}
+
+.address-footer-link:hover,
+.address-footer-link:focus,
+.address-00-footer-link:hover,
+.address-00-footer-link:focus {
+  color: var(--accent-color);
+}
+/* Конец footer */
+
+/* main portfolio.html*/
+.title-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.text-project-direction {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* Кнопки portfolio*/
+.botton-nav-portfolio {
+  cursor: pointer;
+  background-color: var(--botton-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.botton-nav-portfolio:hover,
+.botton-nav-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--color1);
+}
+/*Конец main portfolio.html*/
