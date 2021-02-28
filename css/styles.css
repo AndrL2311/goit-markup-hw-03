@@ -147,9 +147,13 @@ body {
 .properties-item {
   width: 270px;
 }
+.properties-item + .properties-item {
+  margin-left: 20px;
+}
 .list-properties {
   display: flex;
   justify-content: center;
+  margin-bottom: 94px;
 }
 
 .title-employment,
