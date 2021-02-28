@@ -40,6 +40,14 @@ body {
   background-color: var(--background-color);
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* header */
 /* Логотип */
 .logo {
@@ -136,6 +144,7 @@ body {
 }
 
 .text-feature {
+  width: 270px;
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -144,9 +153,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.properties-item {
-  width: 270px;
-}
+
 .properties-item + .properties-item {
   margin-left: 20px;
 }
