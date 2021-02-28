@@ -84,6 +84,29 @@ body {
 .kontakt-link:focus {
   color: var(--accent-color);
 }
+
+.navigation-list {
+  display: flex;
+  margin-left: 93px;
+}
+.navigation-item + .navigation-item {
+  margin-left: 50px;
+}
+.kontakt-list {
+  display: flex;
+}
+.kontakt-item + .kontakt-item {
+  margin-left: 50px;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
 /* Конец header */
 
 /* main index.html*/
@@ -115,12 +138,18 @@ body {
 .text-feature {
   margin-top: 0px;
   margin-bottom: 0px;
-  /* width: 270 px; */
 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+.properties-item {
+  width: 270px;
+}
+.list-properties {
+  display: flex;
+  justify-content: center;
 }
 
 .title-employment,
