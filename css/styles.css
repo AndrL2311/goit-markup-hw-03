@@ -37,22 +37,20 @@
 
 body {
   font-family: var(--main-fond);
-  background-color: var(--background-color);
+  background-color: var(--color1);
 }
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* header */
 /* Логотип */
-.header {
+/* .header {
   background-color: var(--color1);
-}
+} */
 .logo {
   font-family: var(--secondari-font);
   font-weight: 700;
@@ -122,9 +120,15 @@ body {
 /* Конец header */
 
 /* main index.html*/
+.section-hero {
+  background-color: #2f303a;
+  height: 600px;
+}
+
 .title-hero {
   margin-top: 0px;
   margin-bottom: 30px;
+  padding-top: 200px;
 
   font-weight: 900;
   font-size: 44px;
@@ -172,6 +176,7 @@ body {
 }
 .list-employment {
   display: flex;
+  justify-content: center;
   margin-bottom: 94px;
 }
 .title-employment,
@@ -228,10 +233,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.section-hero {
-  background-color: #2f303a;
-  height: 600px;
-}
+
 /* Кнопка */
 .button {
   cursor: pointer;
@@ -264,7 +266,17 @@ body {
 /*Конец main index.html*/
 
 /* footer */
+.footer {
+  background-color: #2f303a;
+  height: 252px;
+  padding-top: 60px;
+}
+.address-footer-list {
+  margin-top: 20px;
+}
 .address-footer-link {
+  margin-top: 9px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
