@@ -44,12 +44,15 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* header */
 /* Логотип */
+.header {
+  background-color: var(--color1);
+}
 .logo {
   font-family: var(--secondari-font);
   font-weight: 700;
@@ -108,6 +111,7 @@ body {
 }
 .container-header {
   display: flex;
+  height: 80px;
   align-items: center;
 }
 .navigation {
@@ -160,9 +164,16 @@ body {
 .list-properties {
   display: flex;
   justify-content: center;
+  margin-top: 94px;
   margin-bottom: 94px;
 }
-
+.item-employment + .item-employment {
+  margin-left: 30px;
+}
+.list-employment {
+  display: flex;
+  margin-bottom: 94px;
+}
 .title-employment,
 .title-team {
   margin-top: 0px;
@@ -175,6 +186,22 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+
+.item-team + .item-team {
+  margin-left: 30px;
+}
+
+.list-team {
+  display: flex;
+  justify-content: center;
+}
+
+.section-team {
+  height: 648px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--background-color);
+}
 .title-workman {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -185,6 +212,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+.img-workman {
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .text-workman {
@@ -197,7 +228,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-
+.section-hero {
+  background-color: #2f303a;
+  height: 600px;
+}
 /* Кнопка */
 .button {
   cursor: pointer;
