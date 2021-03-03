@@ -33,6 +33,9 @@
 .address {
   font-style: normal;
 }
+img {
+  display: block;
+}
 /* Конец базовый сброс */
 
 body {
@@ -107,6 +110,7 @@ body {
 .kontakt-item + .kontakt-item {
   margin-left: 50px;
 }
+
 .container-header {
   display: flex;
   height: 80px;
@@ -168,16 +172,19 @@ body {
 .list-properties {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .item-employment + .item-employment {
   margin-left: 30px;
 }
+.container-employment {
+  padding-bottom: 94px;
+}
+
 .list-employment {
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
 }
 .title-employment,
 .title-team {
@@ -310,6 +317,12 @@ body {
   color: var(--title-color);
 }
 
+.list-project-direction {
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .text-project-direction {
   margin-top: 0px;
   margin-bottom: 0px;
