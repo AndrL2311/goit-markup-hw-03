@@ -101,13 +101,15 @@ body {
   display: flex;
   margin-left: 93px;
 }
-.navigation-item + .navigation-item {
+
+.navigation-list .navigation-item:not(:first-child) {
   margin-left: 50px;
 }
+
 .kontakt-list {
   display: flex;
 }
-.kontakt-item + .kontakt-item {
+.kontakt-list .kontakt-item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -166,7 +168,7 @@ body {
   color: var(--text-color);
 }
 
-.properties-item + .properties-item {
+.list-properties .properties-item:not(:first-child) {
   margin-left: 20px;
 }
 .list-properties {
@@ -175,7 +177,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.item-employment + .item-employment {
+.list-employment .item-employment:not(:first-child) {
   margin-left: 30px;
 }
 .container-employment {
@@ -199,7 +201,7 @@ body {
   color: var(--title-color);
 }
 
-.item-team + .item-team {
+.list-team .item-team:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -296,13 +298,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--color1);
 }
-
+/* 
 .address-footer-link:hover,
 .address-footer-link:focus,
 .address-00-footer-link:hover,
 .address-00-footer-link:focus {
   color: var(--accent-color);
-}
+} */
 /* Конец footer */
 
 /* main portfolio.html*/
