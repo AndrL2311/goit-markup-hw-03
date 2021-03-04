@@ -10,6 +10,7 @@
   --color2: #000000;
   --adress-color: rgba(255, 255, 255, 0.6);
   --botton-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
   --botton-accent-color: #188ce8;
 }
 /* Конец Переменные */
@@ -51,9 +52,9 @@ body {
 
 /* header */
 /* Логотип */
-/* .header {
-  background-color: var(--color1);
-} */
+.header {
+  border: 1px solid #ececec;
+}
 .logo {
   font-family: var(--secondari-font);
   font-weight: 700;
@@ -127,7 +128,7 @@ body {
 
 /* main index.html*/
 .section-hero {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
   height: 600px;
 }
 
@@ -229,7 +230,9 @@ body {
 }
 .box-workman {
   width: 270px;
-  height: 368px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   background: var(--color1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -237,7 +240,7 @@ body {
 }
 .img-workman {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .text-workman {
@@ -284,7 +287,7 @@ body {
 
 /* footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
   height: 252px;
   padding-top: 60px;
 }
@@ -319,13 +322,20 @@ body {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  /* background-color: yellowgreen; */
 }
 
 .list-nav-portfolio {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
+
+.list-nav-portfolio .nav-potfolio-item:not(:first-child) {
+  margin-left: 8px;
+}
+
 .title-project {
   margin-top: 0px;
   margin-bottom: 4px;
@@ -336,14 +346,25 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
-
+.link-direction-item {
+  display: block;
+}
 .list-project-direction {
   display: flex;
-  max-width: 1200px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
 }
+
+.project-direction-item {
+  display: block;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 370px;
+}
+
 .text-project-direction {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -354,10 +375,13 @@ body {
 }
 .box-project {
   width: 370px;
-  height: 404px;
-  background: #ffffff;
+  background: var(--color1);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 /* Кнопки portfolio*/
 .botton-nav-portfolio {
