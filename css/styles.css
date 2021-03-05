@@ -289,15 +289,15 @@ body {
 /* footer */
 .footer {
   background-color: var(--footer-background-color);
-  height: 252px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
-.address-footer-list {
-  margin-top: 20px;
+.logo {
+  display: block;
+  margin-bottom: 20px;
 }
-.address-footer-link {
-  margin-top: 9px;
 
+.address-footer-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
