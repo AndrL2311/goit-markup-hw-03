@@ -36,6 +36,7 @@
 }
 img {
   display: block;
+  max-width: 100%;
 }
 /* Конец базовый сброс */
 
@@ -352,17 +353,15 @@ body {
 .list-project-direction {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  list-style-type: none;
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .project-direction-item {
-  display: block;
+  width: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
-  width: 370px;
 }
 
 .text-project-direction {
