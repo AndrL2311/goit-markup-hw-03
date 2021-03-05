@@ -72,6 +72,10 @@ body {
 
 /* Навигация */
 .navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -117,7 +121,6 @@ body {
 
 .container-header {
   display: flex;
-  height: 80px;
   align-items: center;
 }
 .navigation {
